@@ -1,4 +1,5 @@
 import { Link, Route, Routes } from "react-router-dom";
+
 import { CiBookmarkCheck } from "react-icons/ci";
 import { BiCategory } from "react-icons/bi";
 import { MdOutlineMeetingRoom } from "react-icons/md";
@@ -6,6 +7,8 @@ import { FaRegUser } from "react-icons/fa";
 import { MdOutlineFeedback } from "react-icons/md";
 import { CiImageOn } from "react-icons/ci";
 import NavLink from "../../components/nav-link";
+
+import AdminBooking from "../admin/Bookings/adminBookings";
 
 export default function AdminPage(){
     return(
@@ -27,7 +30,7 @@ export default function AdminPage(){
 
             <div className="w-[80%] bg-blue-900 overflow-y-scroll max-h-[100vh]">
                 <Routes path="/*">
-                    <Route path="/bookings" element={<h1>Bookings</h1>}/>
+                    <Route path="/bookings" element={<AdminBooking/>}/>
                     <Route path="/categories" element={<h1>Categories</h1>}/>
                     <Route path="/rooms" element={<h1>Rooms</h1>}/>
                     <Route path="/users" element={<h1>Users</h1>}/>
