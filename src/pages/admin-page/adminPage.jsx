@@ -8,6 +8,7 @@ import { FaRegUser } from "react-icons/fa";
 import NavLink from "../../components/nav-link";
 
 import AdminBooking from "../admin/Bookings/adminBookings";
+import AdminCategory from "../admin/Categories/adminCategories";
 
 export default function AdminPage(){
     return(
@@ -30,7 +31,7 @@ export default function AdminPage(){
             <div className="w-[80%] bg-blue-900 overflow-y-scroll max-h-[100vh]">
                 <Routes path="/*">
                     <Route path="/bookings" element={<AdminBooking/>}/>
-                    <Route path="/categories" element={<h1>Categories</h1>}/>
+                    <Route path="/categories" element={<AdminCategory/>}/>
                     <Route path="/rooms" element={<h1>Rooms</h1>}/>
                     <Route path="/users" element={<h1>Users</h1>}/>
                     <Route path="/feedbacks" element={<h1>Feedbacks</h1>}/>
