@@ -36,8 +36,17 @@ export default function AdminPage(){
                     <Link to="/admin/galleryitems">Gallery Items</Link>
                 </div>
             </div>
+
+
             <div className="w-[80%] bg-blue-900">
-                
+                <Routes path="/*">
+                    <Route path="/bookings" element={<h1>Bookings</h1>}/>
+                    <Route path="/categories" element={<h1>Categories</h1>}/>
+                    <Route path="/rooms" element={<h1>Rooms</h1>}/>
+                    <Route path="/users" element={<h1>Users</h1>}/>
+                    <Route path="/feedbacks" element={<h1>Feedbacks</h1>}/>
+                    <Route path="/galleryitems" element={<h1>Gallery Items</h1>}/>
+                </Routes>
             </div>
             
         </div>
