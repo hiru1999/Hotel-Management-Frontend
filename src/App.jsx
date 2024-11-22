@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Header/>
-      <div className="w-full h-screen bg-blue-900 flex">
+      <div className="w-full h-screen bg-blue-900 flex flex-col items-center">
 
         <div className="border border-white bg-white h-[100px] w-[700px] rounded-lg flex justify-center items-center">
             <input type="date"/>
