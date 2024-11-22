@@ -41,11 +41,6 @@ export default function AdminPage(){
                     </div>
                 } />
 
-                {/* <Route path="/*" element={
-                    <div className="w-full h-[100vh] bg-green-400">
-                    404 NOT FOUND
-                    </div>
-                }/> */}
             </Routes>
             
         </div>
