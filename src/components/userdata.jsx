@@ -1,9 +1,11 @@
+import './userdata.css'
+
 function UserTag(props){
     
     return(
-        <div>
-            <img src={props.imageLink} style={{width : "50px"}} />
-            <h1>{props.name}</h1>
+        <div className='user-data-div'>
+            <img src={props.imageLink} />
+            <span>{props.name}</span>
         </div>
     )
 }
