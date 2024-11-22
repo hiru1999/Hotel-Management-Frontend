@@ -5,22 +5,22 @@ export default function AdminPage(){
         <div className="w-full max-h-[100vh] overflow-hidden flex">
             
             <div className="w-[20%] bg-blue-400 h-[100vh] flex flex-col">
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/bookings">Bookings</Link>
                 </div>
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/categories">Categories</Link>
                 </div>
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/rooms">Rooms</Link>
                 </div>
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/users">Users</Link>
                 </div>
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/feedbacks">Feedbacks</Link>
                 </div>
-                <div>
+                <div className="text-white text-[30px] hover:font-bold">
                     <Link to="/admin/galleryitems">Gallery Items</Link>
                 </div>
             </div>
