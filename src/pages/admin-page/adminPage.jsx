@@ -1,11 +1,10 @@
 import { Link, Route, Routes } from "react-router-dom";
 
-import { CiBookmarkCheck } from "react-icons/ci";
+import { CiBookmarkCheck , CiImageOn} from "react-icons/ci";
 import { BiCategory } from "react-icons/bi";
-import { MdOutlineMeetingRoom } from "react-icons/md";
+import { MdOutlineMeetingRoom , MdOutlineFeedback} from "react-icons/md";
 import { FaRegUser } from "react-icons/fa";
-import { MdOutlineFeedback } from "react-icons/md";
-import { CiImageOn } from "react-icons/ci";
+
 import NavLink from "../../components/nav-link";
 
 import AdminBooking from "../admin/Bookings/adminBookings";
