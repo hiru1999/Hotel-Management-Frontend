@@ -9,7 +9,7 @@ function App() {
       <Header/>
       <div className="w-full h-screen bg-blue-900 flex">
 
-        <div className="border border-white bg-white h-[100px] w-[700px] rounded-lg">
+        <div className="border border-white bg-white h-[100px] w-[700px] rounded-lg flex justify-center items-center">
             <input type="date"/>
             <input type="date"/>
             <select>
@@ -17,6 +17,7 @@ function App() {
               <option>Standard</option>
               <option>Low</option>
             </select>
+            <button>Book Now</button>
         </div>
 
       </div>
