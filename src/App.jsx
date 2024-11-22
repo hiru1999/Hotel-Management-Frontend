@@ -10,7 +10,9 @@ function App() {
       <div className="w-full h-screen bg-blue-900 flex">
 
         <div className="border border-white bg-white h-[100px] w-[700px] rounded-lg">
-
+            <input type="date"/>
+            <input type="date"/>
+            
         </div>
 
       </div>
