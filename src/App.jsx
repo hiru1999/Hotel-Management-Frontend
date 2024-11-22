@@ -20,6 +20,8 @@ function App() {
             <button>Book Now</button>
         </div>
 
+        <h1 className="text-white text-[50px]">Welcome to the Leonine Villa</h1>
+
       </div>
     </>
   )
