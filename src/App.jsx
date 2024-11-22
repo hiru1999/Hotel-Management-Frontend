@@ -1,28 +1,13 @@
 import Header from "./components/header"
 import './App.css';
+import HomePage from "./pages/client-page/homePage";
 
 function App() {
   
 
   return (
     <>
-      <Header/>
-      <div className="w-full h-screen bg-blue-900 flex flex-col items-center">
-
-        <div className="border border-white bg-white h-[100px] w-[700px] rounded-lg flex justify-center items-center">
-            <input type="date"/>
-            <input type="date"/>
-            <select>
-              <option>Luxury</option>
-              <option>Standard</option>
-              <option>Low</option>
-            </select>
-            <button>Book Now</button>
-        </div>
-
-        <h1 className="text-white text-[50px]">Welcome to the Leonine Villa</h1>
-
-      </div>
+      <HomePage/>
     </>
   )
 }
