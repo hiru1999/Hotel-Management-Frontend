@@ -1,4 +1,5 @@
 import UserTag from "./userdata";
+import "./header.css";
 
 function Header(){
     return(
