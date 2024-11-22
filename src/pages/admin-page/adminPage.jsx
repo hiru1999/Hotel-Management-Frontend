@@ -10,6 +10,9 @@ import NavLink from "../../components/nav-link";
 import AdminBooking from "../admin/Bookings/adminBookings";
 import AdminCategory from "../admin/Categories/adminCategories";
 import AdminRoom from "../admin/Rooms/adminRooms";
+import AdminUser from "../admin/Users/adminUsers";
+import AdminFeedback from "../admin/Feedbacks/adminFeedbacks";
+import AdminGalleryItem from "../admin/GalleryItems/adminGalleryItems";
 
 export default function AdminPage(){
     return(
@@ -34,9 +37,9 @@ export default function AdminPage(){
                     <Route path="/bookings" element={<AdminBooking/>}/>
                     <Route path="/categories" element={<AdminCategory/>}/>
                     <Route path="/rooms" element={<AdminRoom/>}/>
-                    <Route path="/users" element={<h1>Users</h1>}/>
-                    <Route path="/feedbacks" element={<h1>Feedbacks</h1>}/>
-                    <Route path="/galleryitems" element={<h1>Gallery Items</h1>}/>
+                    <Route path="/users" element={<AdminUser/>}/>
+                    <Route path="/feedbacks" element={<AdminFeedback/>}/>
+                    <Route path="/galleryitems" element={<AdminGalleryItem/>}/>
                 </Routes>
             </div>
             
