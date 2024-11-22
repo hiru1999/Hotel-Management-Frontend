@@ -9,6 +9,7 @@ import NavLink from "../../components/nav-link";
 
 import AdminBooking from "../admin/Bookings/adminBookings";
 import AdminCategory from "../admin/Categories/adminCategories";
+import AdminRoom from "../admin/Rooms/adminRooms";
 
 export default function AdminPage(){
     return(
@@ -32,7 +33,7 @@ export default function AdminPage(){
                 <Routes path="/*">
                     <Route path="/bookings" element={<AdminBooking/>}/>
                     <Route path="/categories" element={<AdminCategory/>}/>
-                    <Route path="/rooms" element={<h1>Rooms</h1>}/>
+                    <Route path="/rooms" element={<AdminRoom/>}/>
                     <Route path="/users" element={<h1>Users</h1>}/>
                     <Route path="/feedbacks" element={<h1>Feedbacks</h1>}/>
                     <Route path="/galleryitems" element={<h1>Gallery Items</h1>}/>
