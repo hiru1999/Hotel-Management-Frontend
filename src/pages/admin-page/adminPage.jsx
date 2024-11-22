@@ -25,7 +25,7 @@ export default function AdminPage(){
             </div>
 
 
-            <div className="w-[80%] bg-blue-900 overflow-y-scroll">
+            <div className="w-[80%] bg-blue-900 overflow-y-scroll max-h-[100vh]">
                 <Routes path="/*">
                     <Route path="/bookings" element={<h1>Bookings</h1>}/>
                     <Route path="/categories" element={<h1>Categories</h1>}/>
