@@ -12,7 +12,12 @@ export default function TestComponent(){
                 <span className="text-6xl ml-5 mr-5">
                     {num}
                 </span>
-                <button className="w-[60px] h-[60px] bg-blue-500 rounded-full text-2xl text-white text-center">
+                <button className="w-[60px] h-[60px] bg-blue-500 rounded-full text-2xl text-white text-center"
+                onClick={
+                    ()=>{
+                        alert("Plus button clicked")
+                    }
+                }>
                     +
                 </button>
                 
