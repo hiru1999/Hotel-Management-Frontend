@@ -5,7 +5,10 @@ export default function LoginPage(){
 
     const [email ,setEmail] = useState("")
     const [password ,setPassword] = useState("")
-    
+
+    function handleLogin(){
+        alert(email,password)
+    }
 
     return(
 
@@ -24,7 +27,8 @@ export default function LoginPage(){
                             setPassword(e.target.value)
                         }
                      }/>
-                    <button className="w-[80%] bg-red-500 text-white h-[50px] rounded-md absolute bottom-[40px]">
+                    <button className="w-[80%] bg-red-500 text-white h-[50px] rounded-md absolute bottom-[40px]"
+                    onClick={handleLogin}>
                         Login
                     </button>
                 </div>
