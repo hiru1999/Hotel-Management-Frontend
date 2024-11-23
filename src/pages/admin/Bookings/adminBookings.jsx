@@ -59,20 +59,28 @@ const bookings = [
 export default function AdminBooking(){
     return (
         <div className="w-full">
-            <table className="table-auto border-collapse border border-gray-300 w-full">
+            <table className="table-auto border-collapse w-full">
                 <thead>
-                    <tr className="bg-gray-100">
-                        <th className="border border-gray-300 px-4 py-2">Booking ID</th>
-                        <th className="border border-gray-300 px-4 py-2">Email</th>
-                        <th className="border border-gray-300 px-4 py-2">Start Date</th>
-                        <th className="border border-gray-300 px-4 py-2">End Date</th>
-                        <th className="border border-gray-300 px-4 py-2">Status</th>
-                        <th className="border border-gray-300 px-4 py-2">Reason</th>
-                        <th className="border border-gray-300 px-4 py-2">Notes</th>
+                    <tr className="bg-blue-400 text-white">
+                        <th className="px-4 py-2">Booking ID</th>
+                        <th className="px-4 py-2">Email</th>
+                        <th className="px-4 py-2">Start Date</th>
+                        <th className="px-4 py-2">End Date</th>
+                        <th className="px-4 py-2">Status</th>
+                        <th className="px-4 py-2">Reason</th>
+                        <th className="px-4 py-2">Notes</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
+                    {
+                        bookings.map(
+                            (booking)=>{
+                                return(
+                                    <h1>aaaaaa</h1>
+                                )
+                            }
+                        )
+                    }
                 </tbody>
             </table>
         </div>
