@@ -1,7 +1,7 @@
 export default function TestComponent(){
     return(
 
-        <div className="bg-red-900 w-[60px] h-[60px]">
+        <div className="bg-red-900 w-full h-[100vh] flex justify-center items-center">
             test
         </div>
 
