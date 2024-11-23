@@ -76,7 +76,14 @@ export default function AdminBooking(){
                         bookings.map(
                             (booking)=>{
                                 return(
-                                    <h1>aaaaaa</h1>
+                                    <tr>
+                                        <td>{booking.bookingId}</td>
+                                        <td>{booking.email}</td>
+                                        <td>{booking.start.toDateString()}</td>
+                                        <td>{booking.end.toDateString()}</td>
+                                        <td>{booking.status}</td>
+                                        <td>{booking.reason}</td>
+                                    </tr>
                                 )
                             }
                         )
