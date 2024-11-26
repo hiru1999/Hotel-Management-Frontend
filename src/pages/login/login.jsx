@@ -8,7 +8,20 @@ export default function LoginPage(){
     const [password ,setPassword] = useState("")
 
     function handleLogin(){
-        console.log(email,password)
+        axios.post("http://localhost:5000/api/users/login",
+            {
+                email : email,
+                password : password
+            }
+        ).then(
+            (res)=>{
+                console.log(res)
+            }
+        ).catch(
+            (err)=>{
+                console.log(err)
+            }
+        )
     }
 
     return(
