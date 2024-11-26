@@ -7,7 +7,7 @@ export default function LoginPage(){
     const [password ,setPassword] = useState("")
 
     function handleLogin(){
-        alert(email,password)
+        console.log(email,password)
     }
 
     return(
