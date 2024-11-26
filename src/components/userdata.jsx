@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 function UserTag(props){
 
     const [name, setName] = useState("")
-
+    const [userFound, setUserFound] = useState(false)
     const token = localStorage.getItem("token")
 
 
