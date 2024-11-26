@@ -24,6 +24,7 @@ function UserTag(props){
                     (res)=>{
                         console.log(res);
                         setName(res.data.user.firstName + " " + res.data.user.lastName);
+                        setUserFound(true)
                     }
                 )
             }
