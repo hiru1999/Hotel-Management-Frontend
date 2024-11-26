@@ -5,13 +5,14 @@ function UserTag(props){
 
     const [name, setName] = useState("")
     const [userFound, setUserFound] = useState(false)
-    const token = localStorage.getItem("token")
+    
 
 
     
     //useEffect(function,[])
     useEffect(
         ()=>{
+            const token = localStorage.getItem("token")
             if(token!=null){
                 axios.get(import.meta.env.VITE_BACKEND_URL + "/api/users/",
                     {
@@ -39,8 +40,7 @@ function UserTag(props){
             <button onClick={
                 ()=>{
                     localStorage.removeItem("token")
-                    const token = localStorage.getItem("token")
-                    console.log(token)
+                    setUserFound(false)
                 }
             }>
                 logout
