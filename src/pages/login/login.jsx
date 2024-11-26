@@ -15,12 +15,10 @@ export default function LoginPage(){
             }
         ).then(
             (res)=>{
-                console.log(res.data)
+                
                 localStorage.setItem("token",res.data.token)
-
-                const token = localStorage.getItem("token")
-                console.log(token)
-
+                // const token = localStorage.getItem("token")
+                
                 if(res.data.user.type == "admin"){
                     window.location.href = "/admin"
                 }else{
