@@ -20,6 +20,13 @@ export default function LoginPage(){
 
                 const token = localStorage.getItem("token")
                 console.log(token)
+
+                if(res.data.user.type == "admin"){
+                    window.location.href = "/admin"
+                }else{
+                    window.location.href = "/"
+                }
+
             }
         ).catch(
             (err)=>{
