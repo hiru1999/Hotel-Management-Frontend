@@ -1,8 +1,12 @@
 import axios from "axios";
+import { useState } from "react";
 
 function UserTag(props){
 
+    const [name, setName] = useState("")
+
     const token = localStorage.getItem("token")
+
 
     if(token!=null){
         // console.log(token)
