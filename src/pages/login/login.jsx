@@ -18,10 +18,11 @@ export default function LoginPage(){
                 
                 localStorage.setItem("token",res.data.token)
                 // const token = localStorage.getItem("token")
+
                 
                 if(res.data.user.type == "admin"){
                     window.location.href = "/admin"
-                }else{
+                }else if(res.data.user.type == "customer"){
                     window.location.href = "/"
                 }
 
