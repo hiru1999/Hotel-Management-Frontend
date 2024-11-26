@@ -29,7 +29,7 @@ function UserTag(props){
                     }
                 )
             }
-        },[]
+        },[userFound]
     );
 
     
