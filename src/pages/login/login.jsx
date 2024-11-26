@@ -15,7 +15,11 @@ export default function LoginPage(){
             }
         ).then(
             (res)=>{
-                console.log(res)
+                console.log(res.data)
+                localStorage.setItem("token",res.data.token)
+
+                const token = localStorage.getItem("token")
+                console.log(token)
             }
         ).catch(
             (err)=>{
