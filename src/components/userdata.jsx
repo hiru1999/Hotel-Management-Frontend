@@ -1,5 +1,7 @@
 
 function UserTag(props){
+
+    const token = localStorage.getItem("token")
     
     return(
         <div className="absolute right-0 flex items-center  cursor-pointer mr-2">
