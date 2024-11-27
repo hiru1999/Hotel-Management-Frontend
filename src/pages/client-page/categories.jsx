@@ -9,7 +9,7 @@ export default function CategoriesPage(){
         ()=>{
             axios.get(import.meta.env.VITE_BACKEND_URL+"/api/category").then(
                 (res)=>{
-                    console.log(res.data)
+                    setCategories(res.data.categories)
                 }
             )
         },[]
