@@ -61,11 +61,13 @@ export default function CategoriesPage(){
                     className="w-12 h-12 object-cover"
                     />
                 </td>
+
                 <td className="border border-gray-300 px-4 py-2">
-                    <button className="bg-red-500 text-white px-2 py-1 rounded-lg ml-2">
+                    <button onClick={()=>{deleteItem(category.name)}} className="bg-red-500 text-white px-2 py-1 rounded-lg ml-2">
                         Delete
                     </button>
                 </td>
+                
                 </tr>
             ))}
             </tbody>
