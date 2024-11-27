@@ -4,22 +4,32 @@ import React, { useEffect, useState } from "react";
 export default function CategoriesPage(){
 
     const [categories,setCategories] = useState([])
+    const [categoriesIsLoaded,setCategoriesIsLoaded] = useState(false)
 
     //get category data for frontend table
     useEffect(
         ()=>{
-            axios.get(import.meta.env.VITE_BACKEND_URL+"/api/category").then(
-                (res)=>{
-                    setCategories(res.data.categories)
-                }
-            )
-        },[]
+            if(!categoriesIsLoaded){
+                axios.get(import.meta.env.VITE_BACKEND_URL+"/api/category").then(
+                    (res)=>{
+                        setCategories(res.data.categories)
+                        setCategoriesIsLoaded(true)
+                    }
+                )
+            }
+            
+        },[categoriesIsLoaded]
     )
 
 
     //Delete
     function deleteItem(name){
         alert("Deleting category with name : "+name )
+        axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/category"+name).then(
+            (res)=>{
+                setCategoriesIsLoaded(false)
+            }
+        )
     }
 
 
@@ -67,7 +77,7 @@ export default function CategoriesPage(){
                         Delete
                     </button>
                 </td>
-                
+
                 </tr>
             ))}
             </tbody>
