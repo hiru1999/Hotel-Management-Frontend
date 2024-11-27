@@ -28,6 +28,8 @@ function UserTag(props){
                         setUserFound(true)
                     }
                 )
+            }else{
+                setName("")
             }
         },[userFound]
     );
