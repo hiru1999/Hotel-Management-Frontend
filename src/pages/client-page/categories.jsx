@@ -6,7 +6,6 @@ export default function CategoriesPage(){
     const [categories,setCategories] = useState([])
     const [categoriesIsLoaded,setCategoriesIsLoaded] = useState(false)
 
-    const [isModelOpen, setIsModelOpen] = useState(false)
 
     //get category data for frontend table
     useEffect(
@@ -26,8 +25,7 @@ export default function CategoriesPage(){
 
     //Delete
     function deleteItem(name){
-        alert("Deleting category with name : "+name )
-        axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/category"+name).then(
+        axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/category/"+name).then(
             (res)=>{
                 setCategoriesIsLoaded(false)
             }
@@ -84,14 +82,6 @@ export default function CategoriesPage(){
             ))}
             </tbody>
         </table>
-
-        {
-            isModelOpen&&(
-                <div className="w-full h-[100vh] bg-[#00000055] fixed top-0 left-0 flex justify-center items-center">
-                    <span className="text-white">Model</span>
-                </div>
-            )
-        }
 
         </div>
     );
