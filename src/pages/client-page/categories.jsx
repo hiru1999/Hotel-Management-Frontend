@@ -5,6 +5,7 @@ export default function CategoriesPage(){
 
     const [categories,setCategories] = useState([])
 
+    //get category data for frontend table
     useEffect(
         ()=>{
             axios.get(import.meta.env.VITE_BACKEND_URL+"/api/category").then(
@@ -14,6 +15,12 @@ export default function CategoriesPage(){
             )
         },[]
     )
+
+
+    //Delete
+    function deleteItem(name){
+        alert("Deleting category with name : "+name )
+    }
 
 
     return (
