@@ -1,30 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function CategoriesPage(){
 
-    const categories = [
-        {
-            name: "Electronics",
-            price: 299.99,
-            features: ["Durable", "Portable", "Energy-efficient"],
-            description: "High-quality electronic gadgets.",
-            image: "https://via.placeholder.com/50",
-        },
-        {
-            name: "Furniture",
-            price: 499.99,
-            features: ["Elegant", "Sturdy", "Eco-friendly"],
-            description: "Modern and stylish furniture for your home.",
-            image: "https://via.placeholder.com/50",
-        },
-        {
-            name: "Clothing",
-            price: 59.99,
-            features: ["Comfortable", "Trendy", "Affordable"],
-            description: "Fashionable clothing for all seasons.",
-            image: "https://via.placeholder.com/50",
-        },
-    ];
+    const [categories,setCategories] = useState([])
+
+    // const categories = [
+    //     {
+    //         name: "Electronics",
+    //         price: 299.99,
+    //         features: ["Durable", "Portable", "Energy-efficient"],
+    //         description: "High-quality electronic gadgets.",
+    //         image: "https://via.placeholder.com/50",
+    //     },
+    //     {
+    //         name: "Furniture",
+    //         price: 499.99,
+    //         features: ["Elegant", "Sturdy", "Eco-friendly"],
+    //         description: "Modern and stylish furniture for your home.",
+    //         image: "https://via.placeholder.com/50",
+    //     },
+    //     {
+    //         name: "Clothing",
+    //         price: 59.99,
+    //         features: ["Comfortable", "Trendy", "Affordable"],
+    //         description: "Fashionable clothing for all seasons.",
+    //         image: "https://via.placeholder.com/50",
+    //     },
+    // ];
 
     return (
         <div className="container mx-auto p-4">
