@@ -1,8 +1,19 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 export default function CategoriesPage(){
 
     const [categories,setCategories] = useState([])
+
+    useEffect(
+        ()=>{
+            axios.get(import.meta.env.VITE_BACKEND_URL+"/api/category").then(
+                (res)=>{
+                    console.log(res.data)
+                }
+            )
+        },[]
+    )
 
     // const categories = [
     //     {
