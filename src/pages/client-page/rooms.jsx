@@ -1,9 +1,23 @@
+import axios from 'axios'
 import react, { useEffect, useState } from 'react'
 
 export default function RoomsPage(){
 
     const [rooms,setRooms] = useState([])
     const [roomsIsLoaded,setRoomsIsLoaded] = useState(false)
+
+    useEffect(
+        ()=>{
+            if(!roomsIsLoaded){
+                axios.get(import.meta.env.VITE_BACKEND_URL+"/api/rooms").then(
+                    (res)=>{
+                        setRooms(res.data.rooms)
+                        setRoomsIsLoaded(true)
+                    }
+                )
+            }
+        }
+    )
 
 
     return (
