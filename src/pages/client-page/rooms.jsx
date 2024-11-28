@@ -19,6 +19,15 @@ export default function RoomsPage(){
         }
     )
 
+    //Delete
+    function deleteItem(roomId){
+        axios.delete(import.meta.env.VITE_BACKEND_URL+"/api/rooms/"+roomId).then(
+            (res)=>{
+                setRoomsIsLoaded(false)
+            }
+        )
+    }
+
 
     return (
         <div className="container mx-auto p-4">
