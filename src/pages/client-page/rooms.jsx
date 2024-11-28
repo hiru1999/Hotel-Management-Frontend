@@ -60,6 +60,13 @@ export default function RoomsPage(){
                     {room.specialDescription || "N/A"}
                 </td>
                 <td className="border border-gray-300 px-4 py-2">{room.notes || "N/A"}</td>
+
+                <td className="border border-gray-300 px-4 py-2">
+                    <button className="bg-red-500 text-white px-2 py-1 rounded-lg ml-2">
+                        Delete
+                    </button>
+                </td>
+
                 </tr>
             ))}
             </tbody>
